@@ -35,7 +35,10 @@ Pure Pursuit Control (PPC) is a geometric path-tracking algorithm used in autono
 
 
 ### Results:
-https://drive.google.com/file/d/1ycXGqK-HrH_AnBQ101SBxSrtNztOpATI/view?usp=sharing
+
+
+![PPC](https://github.com/Zeista01/Advanced-Driving-Assistance-System-/blob/main/Results/ppc.gif)
+
 
 ### Conclusion
 This PPC implementation enables path tracking in CARLA. Adjusting lookahead distance and speed optimizes performance.
