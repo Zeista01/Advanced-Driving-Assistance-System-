@@ -21,16 +21,22 @@ Pure Pursuit Control (PPC) is a geometric path-tracking algorithm used in autono
 4. **Camera Setup**: Mount a camera for observation.
 5. **Pure Pursuit Controller**:
    - Set a lookahead distance to find the lookahead point on the trajectory.
-   - Compute steering angle using:
-     $$
-     \delta = \tan^{-1}\left(\frac{2L \sin(\alpha)}{L_d}\right)
-     $$
-   - Apply steering command.
+  - Compute steering angle using:
+  
+  $$
+  \delta = \tan^{-1}\left(\frac{2L \sin(\alpha)}{L_d}\right)
+  $$
+
+  - Apply steering command.
+
 6. **Bicycle Model**:
+
    - Update vehicle state using:
-     $$
-     \dot{x} = v \cos(\theta), \quad \dot{y} = v \sin(\theta), \quad \dot{\theta} = \frac{v}{L} \tan(\delta)
-     $$
+
+  $$
+  \dot{x} = v \cos(\theta), \quad \dot{y} = v \sin(\theta), \quad \dot{\theta} = \frac{v}{L} \tan(\delta)
+  $$
+
 7. **Control Loop**: Continuously update the lookahead based on the current position of the vehicle apply requires control.
 
 
