@@ -7,7 +7,8 @@ We are using a software called CARLA for various simulation validations.
 Car follower is a simple system which follows a lead car while maintaining constant distance.
 
 ### Results:
-https://drive.google.com/file/d/1A9dlfvb626ndAPMwntn-QjQ-9_mYQjx7/view?usp=drive_link
+
+![Car Follower](https://github.com/Zeista01/Advanced-Driving-Assistance-System-/blob/main/Results/carfollower.gif)
 
 
 ## Pure Pursuit in CARLA
