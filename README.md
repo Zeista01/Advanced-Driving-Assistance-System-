@@ -10,7 +10,6 @@ Car follower is a simple system which follows a lead car while maintaining const
 
 ![Car Follower](https://github.com/Zeista01/Advanced-Driving-Assistance-System-/blob/main/Results/carfollower.gif)
 
-
 ## Pure Pursuit in CARLA
 
 Pure Pursuit Control (PPC) is a geometric path-tracking algorithm used in autonomous driving. This implementation applies PPC to a bicycle model in CARLA.
@@ -43,8 +42,12 @@ Pure Pursuit Control (PPC) is a geometric path-tracking algorithm used in autono
 
 ### Results:
 
+| ![Waypoints](https://github.com/Zeista01/Advanced-Driving-Assistance-System-/blob/main/Results/trajectory.png?raw=true) | ![PPC](https://github.com/Zeista01/Advanced-Driving-Assistance-System-/blob/main/Results/output2.gif?raw=true) |
+|:---:|:---:|
+| **The Trajectory** | **Tracing the Path by Pure Pursuit Control** |
 
-![PPC](https://github.com/Zeista01/Advanced-Driving-Assistance-System-/blob/main/Results/ppc.gif)
+
+
 
 
 ### Conclusion
