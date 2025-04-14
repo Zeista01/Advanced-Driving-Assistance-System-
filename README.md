@@ -63,21 +63,21 @@ This PPC implementation enables path tracking in CARLA. Adjusting lookahead dist
 
 ## Lane Segmentation using U-Net Architecture
 
-Lane segmentation was implemented using a U-Net architecture to identify lane markings in CARLA simulation data, leveraging the Lyft-Udacity Challenge dataset. The approach involved training a deep learning model to segment lane regions from camera images.
+Lane segmentation was implemented using a U-Net architecture to identify lane markings in images from the CARLA driving simulator, leveraging the "Lane Detection for CARLA Driving Simulator" dataset from Kaggle. The approach involved training a deep learning model to segment lane regions from camera images.
 
 ### Methodology
-1. **Data Preparation**: Utilized the Lyft-Udacity dataset (dataB), containing RGB images and corresponding segmentation masks from CARLA, loaded via PyTorch DataLoaders.
+1. **Data Preparation**: Utilized the Kaggle dataset, containing RGB images and corresponding segmentation masks from CARLA, located in /kaggle/input/lane-detection-for-carla-driving-simulator/, loaded via PyTorch DataLoaders.
 2. **Model Architecture**: Employed a U-Net with an encoder-decoder structure, featuring convolutional layers for feature extraction and upsampling layers for pixel-wise segmentation.
 3. **Training**: Trained the model on a GPU (NVIDIA Tesla T4) using a combined Dice and Binary Cross-Entropy loss function, optimized with AdamW and a learning rate scheduler (ReduceLROnPlateau).
-4. **Evaluation**: Assessed performance using metrics like Mean Intersection over Union (MIoU) and Dice Coefficient, with visualization of predicted masks against ground truth.
-5. **Model Saving**: Saved the trained model's state dictionary to `/kaggle/working/best_unet_model.pth` for reuse.
+4. **Evaluation**: Assessed performance using metrics like Mean Intersection over Union (MIoU) and Dice Coefficient, with visualization of predicted masks against ground truth. Inference speed was measured, achieving an average of 0.0127 seconds per image (78.99 FPS).
+5. **Model Saving**: Loaded the best model weights from best_model.pth and saved the final trained model's state dictionary to /kaggle/working/final_lane_segmentation_model.pth for reuse.
 
 ### Results
-The trained U-Net model achieved promising lane segmentation performance. Visualizations showed accurate lane detection in test images, with predicted masks closely aligning with ground truth. Quantitative metrics (e.g., MIoU and Dice) improved over epochs, indicating effective learning. (Note: Specific values and images to be added based on training output.)
+The trained U-Net model achieved promising lane segmentation performance. Visualizations showed accurate lane detection in validation images, with predicted masks closely aligning with ground truth. Quantitative metrics (e.g., MIoU and Dice) improved over epochs, indicating effective learning. The model demonstrated real-time capability with an estimated 78.99 FPS on the NVIDIA Tesla T4 GPU. (Note: Specific metric values and images to be added based on training output.)
 
-![Results of U-Net](https://github.com/Zeista01/Advanced-Driving-Assistance-System-/blob/main/Results/Results%20of%20U-Net.png?raw=true)
+![Results of U-Net](https://github.com/Zeista01/Advanced-Driving-Assistance-System-/blob/main/Results/MIoU%20and%20loss.png?raw=true)
 
-![Results of U-Net](https://github.com/Zeista01/Advanced-Driving-Assistance-System-/blob/main/Results/Predictions.png?raw=true)
+![Results of U-Net](https://github.com/Zeista01/Advanced-Driving-Assistance-System-/blob/main/Results/lane%20seg.png?raw=true)
 
 ---
 *References:*
