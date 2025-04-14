@@ -79,6 +79,13 @@ The trained U-Net model achieved promising lane segmentation performance. Visual
 
 ![Results of U-Net](https://github.com/Zeista01/Advanced-Driving-Assistance-System-/blob/main/Results/lane%20seg.png?raw=true)
 
+
+### Carla Simulation:
+
+| ![rgb_camera](https://github.com/Zeista01/Advanced-Driving-Assistance-System-/blob/main/Results/rbg_output.gif?raw=true) | ![Segmented_lane](https://github.com/Zeista01/Advanced-Driving-Assistance-System-/blob/main/Results/segmented_lane.gif?raw=true) |
+|:---:|:---:|
+| **Dashboard Camera** | **Segmented lanes** |
+
 ---
 *References:*
 - CARLA Simulator Docs
