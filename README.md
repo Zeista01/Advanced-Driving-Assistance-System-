@@ -82,7 +82,7 @@ The trained U-Net model achieved promising lane segmentation performance. Visual
 
 ### Carla Simulation:
 
-![Dashboard Camera](https://github.com/Zeista01/Advanced-Driving-Assistance-System-/blob/main/Results/output_combined.gif?raw=true)
+![Dashboard Camera](Results/output_combined.gif)
 
 ---
 *References:*
